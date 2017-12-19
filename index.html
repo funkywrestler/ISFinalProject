@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+	<title>Contacts List Management</title>
+	
+	<link rel="stylesheet" href="style.css">
+	
+</head>
+<body>
+	<h1>Contacts List </h1>
+	<table id="contacts-table">
+<tr id="contacts-head">
+    <th>ID</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone Number</th>
+    <th>Actions</th>
+</tr>
+</table>
+
+<form id="contacts-form">
+
+
+<div class="item text">
+    <label> Name:</label>
+    <div class="field"><input type="text" placeholder = "Name" name="name" required/></div>
+</div>
+
+
+<div class="item text">
+    <label>Email:</label>
+    <div class="field"><input type="email" placeholder = "xxxxx@xxxx.com" name="email" required /></div>
+</div>
+
+
+<div class="item text">
+    <label>Phone Number:</label>
+    <div class="field"><input type="num" placeholder = "(###)###-####" name="phone" required /></div>
+</div>
+
+
+<div class="button-wrapper">
+    <div class="item button">
+        <div class="field"><input type="button" id="contacts-op-discard" value="Discard" /></div>
+    </div>
+    <div class="item button button-default">
+        <div class="field"><input type="submit" id="contacts-op-save" value="Save" /></div>
+    </div>
+</div>
+
+<input type="hidden" name="id_entry" value="0" />
+</form>
+
+<script src="app.js"></script>
+</body>
+</html>
+
